@@ -12,7 +12,7 @@
         },
         {
             "id": "buildAndPrice",
-            "path": "/build_and_price",
+            "path": "/build_and_price?",
             "layoutTemplate":"$layoutsDir/main.html",
             "rootComponent": "pages/buildAndPrice",
             "bootstrap":{
