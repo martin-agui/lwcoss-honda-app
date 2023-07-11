@@ -12,9 +12,11 @@
     "build:prod-compat": "lwr build --clean --mode prod-compat",
     "start": "lwr start",
     "stage": "yarn build && yarn start",
-    "stage:prod-compat": "yarn build:prod-compat && yarn start"
+    "stage:prod-compat": "yarn build:prod-compat && yarn start",
+    "copyslds":"node ./scripts/copy-slds.mjs"
   },
   "dependencies": {
+    "@salesforce-ux/design-system": "^2.21.3",
     "lwc": "3.0.0",
     "lwr": "0.10.0"
   },
