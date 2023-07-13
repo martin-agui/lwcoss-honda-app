@@ -59,6 +59,9 @@ export default class BuildAndPrice extends LightningElement{
       this.animatePrice()
     }
 
+    get description(){
+      return `Customer is looking for CRV ${this.selectedVariant.variant} of color ${this.selectedColorName}`;
+    }
 
     selectionHandler(e){
       const {selected, variant} = event.detail
@@ -92,7 +95,7 @@ export default class BuildAndPrice extends LightningElement{
       this.showModal=!this.showModal;
     }
     submitHandler(e){
-      
+      this.template.querySelector('components-lead-form').formSubmit()
     }
     animatePrice(){
       this.animatedPriceValue = ANIMATED_STARTING_PRICE
